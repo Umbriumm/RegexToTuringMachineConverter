@@ -21,7 +21,7 @@ public class ConvertRegexToTuringMachine {
         System.out.println();
 
         TuringMachine tm = DFAtoTM.convert(
-                NFAtoDFA.convert(
+                NFAtoDFA.convertAndPrint(
                         RegexToNFA.convertRegexToNFA(regex)));
 
         System.out.println(CYAN + " === Turing Machine Transitions === " + RESET);

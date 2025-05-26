@@ -49,10 +49,7 @@ public class DFA {
         System.out.println("All transitions:");
         for (States state : allStates) {
             for (Map.Entry<Character, States> entry : state.getDFATransitions().entrySet()) {
-                if (entry.getKey() == ' '){
-                    System.out.println("  " + state + " --" + entry.getKey() + "--> " + entry.getValue() +" ⁉️⁉️⁉️⁉️⁉️⁉️⁉️⁉️⁉️⁉️خخخخخخخخخخخخخخخ");
-                    continue;
-                }
+
                 System.out.println("  " + state + " --" + entry.getKey() + "--> " + entry.getValue());
             }
         }

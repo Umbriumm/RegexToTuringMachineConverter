@@ -9,6 +9,6 @@ public class Main {
                     // This simulates a Turing Machine tape
 //        ConvertRegexToTuringMachine.convertAndSimulate("b[0-9]+", "b");
 
-        ConvertRegexToTuringMachine.convertAndPrintTransitions("ab(c|d)*");
+        ConvertRegexToTuringMachine.convertAndPrintTransitions("a|b");
     }
 }

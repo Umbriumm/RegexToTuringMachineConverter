@@ -9,6 +9,10 @@ public class States {
     private boolean Accepting;
     public Set<Transition> transitions;
 
+    final String RESET = "\u001B[0m";
+    final String CYAN = "\u001B[36m";
+    final String GREEN = "\u001B[32m";
+
     //mainPackage.DFA use (optional)
     private Set<States> nfaSubset; // used if this is a mainPackage.DFA state
     private Map<Character, States> dfaTransitions;
@@ -57,7 +61,7 @@ public class States {
 
     @Override
     public String toString() {
-        return "q" + id + (Accepting ? " (accepting)" : "");  // Updated label
+        return "q" + id + (Accepting ? GREEN + " [ACCEPTING] " + RESET : "");  // Updated label
     }
 
     public String getName() {
